@@ -48,7 +48,6 @@ button:hover {
     transform: translateY(-2px);
     transition: box-shadow 0.2s, transform 0.2s;
     transition-delay: 0.05s;
-
 }
 
 a {
@@ -91,6 +90,8 @@ nav {
     font-size: 1.4rem;
     color: #c0a013;
     letter-spacing: 1px;
+    font-weight: 700;
+    cursor: default;
 }
 
 /* Nav Links styling */
@@ -156,10 +157,13 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    color: #c0a013;
     border-radius: 15px;
     /*box-shadow: 0 8px 32px rgba(37,116,169,0.1);*/
     min-height: 80vh;
+}
+
+h1 {
+    color: #c0a013;
 }
 
 
@@ -180,6 +184,7 @@ nav {
     margin: 24px 0 16px 0;
     padding-bottom: 20px;
     line-height: 1.4;
+    color: #ffffff;
 }
 
 
@@ -232,7 +237,7 @@ h1 {
 .skill {
     position: relative;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     transition: transform 0.3s ease;
     width: 80px;
     flex-shrink: 0;
@@ -273,7 +278,7 @@ h1 {
 .skills-text {
     margin: 0 auto 32px auto;
     font-size: 1.1rem;
-    color: #c0a013;
+    color: #ffffff;
     line-height: 1.6;
     text-align: center;
     font-weight: 500;
@@ -336,13 +341,14 @@ h1 {
 
 .project p {
     font-size: 1.1rem;
-    color: #c0a013;
+    color: #ffffff;
 }
 
 .project-skills {
     list-style: none;
     display: flex;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 8px 12px;
     margin: 16px 0;
     padding: 0;
 }
@@ -351,15 +357,31 @@ h1 {
 
 .project-skills li {
     background: #ffffff;
-    color: #ba570c;
+    color: #000000;
+    font-weight: bold;
     border-radius: 12px;
     padding: 5px 12px;
     font-size: 1rem;
 }
 
 .github-btn {
-    margin-top: auto;
     padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    margin: auto;
+    cursor: pointer;
+    background: linear-gradient(90deg,#c0a013,#a18609 70%);
+    color: #fff;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(37,116,169,0.08);
+}
+
+.github-btn:hover {
+    box-shadow: 0 6px 30px rgba(50,195,250,0.16);
+    transform: translateY(-2px);
+    transition: box-shadow 0.2s, transform 0.2s;
+    transition-delay: 0.05s;
 }
 
 /* Footer Section */
